@@ -2,6 +2,12 @@
 
 A React web application that allows you to browse, manage, and build your own custom bot army. Built with React, Vite, and JSON Server for a seamless galactic overlord experience.
 
+## Live Demo
+
+🌐 Frontend Application: https://bot-battlr-frontend-1zco.onrender.com
+
+🔗 Backend API: https://bot-battlr-backend-kwuq.onrender.com/bots
+
 ## Features
 
 ### Core Features
