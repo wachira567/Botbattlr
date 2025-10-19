@@ -159,3 +159,17 @@ Example response:
   "avatar_url": "https://robohash.org/nostrumrepellendustenetur.png"
 }
 ```
+
+## Keep-Alive Setup
+
+```
+# Preventing Cold Starts
+Implemented solutions to keep the application awake and prevent cold starts on Render.com:
+
+# Solutions Deployed:
+~UptimeRobot Monitoring;
+5-minute monitoring intervals. Monitors both frontend and backend URLs
+
+~Self-Pinging Backend Script added to server.js;
+This automatically pings services every 10 minutes and prevents  Render.com from spinning down instances
+```
