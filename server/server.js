@@ -8,39 +8,37 @@ const port = process.env.PORT || 10000;
 server.use(middlewares);
 server.use(router);
 
-// Self-pinging function
-function keepAlive() {
-  const backendUrl = "https://bot-battlr-backend-kwuq.onrender.com/bots";
-  const frontendUrl = "https://bot-battlr-frontend-1zco.onrender.com";
+// Keep-alive function
+const keepAlive = () => {
+  const urls = [
+    "https://bot-battlr-backend-kwuq.onrender.com/bots",
+    "https://bot-battlr-frontend-1zco.onrender.com",
+  ];
 
-  console.log(" Pinging services to prevent sleep...");
+  urls.forEach((url) => {
+    https
+      .get(url, (res) => {
+        console.log(
+          ` ${new Date().toLocaleTimeString()} - ${url} - Status: ${
+            res.statusCode
+          }`
+        );
+      })
+      .on("error", (err) => {
+        console.log(
+          ` ${new Date().toLocaleTimeString()} - ${url} - Error: ${err.message}`
+        );
+      });
+  });
+};
 
-  // Ping backend
-  https
-    .get(backendUrl, (res) => {
-      console.log(`Backend pinged - Status: ${res.statusCode}`);
-    })
-    .on("error", (err) => {
-      console.log("Backend ping failed:", err.message);
-    });
-
-  // Ping frontend
-  https
-    .get(frontendUrl, (res) => {
-      console.log(`Frontend pinged - Status: ${res.statusCode}`);
-    })
-    .on("error", (err) => {
-      console.log(" Frontend ping failed:", err.message);
-    });
-}
-
-// Ping every 10 minutes (Render free tier sleeps after 15min inactivity)
+// Ping every 10 minutes (Render sleeps after 15min inactivity)
 setInterval(keepAlive, 10 * 60 * 1000);
 
-// Initial ping when server starts
+// Start pinging 5 seconds after server starts
 setTimeout(keepAlive, 5000);
 
 server.listen(port, () => {
-  console.log(` JSON Server is running on port ${port}`);
-  console.log(` Backend URL: https://bot-battlr-backend-kwuq.onrender.com`);
+  console.log(` Bot Battlr Backend running on port ${port}`);
+  console.log(` Keep-alive service activated`);
 });
