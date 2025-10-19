@@ -35,21 +35,41 @@ A React web application that allows you to browse, manage, and build your own cu
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repository-url>
+   git clone https://github.com/wachira567/Botbattlr.git
    cd bot-battlr
    ```
 
 ## Install Dependencies
 
-```bash
+```# Install server dependencies
+cd server
 npm install
 
-## Start the JSON Server (Terminal 1)
+# Install client dependencies
+cd ../client
+npm install
 
-json-server --watch db.json --port 8001
+## Start the development servers
 
-## Start the React Application (Terminal 2)
+Terminal 1 - Backend Server:
+
+cd server
+npm start
+
+Server runs on: http://localhost:10000
+
+## Terminal 2 - Frontend Application:
+cd client
 npm run dev
+
+
+Client runs on: http://localhost:5173
+
+## Access the Application
+
+Frontend: http://localhost:5173
+
+Backend API: http://localhost:10000/bots
 
 ## How to Use
 ### Building Your Army
@@ -74,21 +94,68 @@ Sort Bots: Use the sort buttons to organize by health, damage, or armor.
 ## Project Structure
 
 ```
-## src/
+bot-battlr/
+├── client/                 # React frontend application
+│   ├── src/
+│   │   ├── components/     # React components
+│   │   ├── App.jsx         # Main application component
+│   │   ├── App.css         # Application styles
+│   │   └── main.jsx        # Application entry point
+│   ├── package.json        # Client dependencies
+│   └── vite.config.js      # Vite configuration
+├── server/                 # JSON server backend
+│   ├── db.json            # Database file with bot data
+│   ├── server.js          # Server configuration
+│   └── package.json       # Server dependencies
+└── README.md              # Project documentation
+```
 
- ├── components/
+## Backend Setup
 
- │ ├── BotCollection.jsx # Displays all available bots
+This project uses JSON Server to provide a mock REST API for the bot data. The server runs locally and provides endpoints for:
 
- │ ├── BotCard.jsx # Individual bot component
+- `GET /bots` - Retrieve all bots
+- `DELETE /bots/:id` - Remove a bot permanently
 
- │ ├── YourBotArmy.jsx # User's selected bots
+## Repository
 
- │ └── SortBar.jsx # Filtering and sorting controls
+- **GitHub URL**: [https://github.com/wachira567/Botbattlr](https://github.com/wachira567/Botbattlr)
+-
 
- ├── App.jsx # Main application component
+## Technologies Used
 
- ├── App.css # Application styles
+### Frontend
 
- └── main.jsx # Application entry point
+- **React 19** - Component-based UI framework
+- **Vite** - Build tool and development server
+- **CSS3** - Styling with responsive design
+
+### Backend
+
+- **JSON Server** - Mock REST API for bot data
+- **Node.js** - Runtime environment
+
+### Deployment
+
+- **Render.com** - Full-stack hosting platform
+
+## API Endpoints
+
+The application interacts with these JSON Server endpoints:
+
+- `GET /bots` - Fetch all available bots
+- `DELETE /bots/:id` - Permanently remove a bot from service
+
+Example response:
+
+```json
+{
+  "id": 101,
+  "name": "wHz-93",
+  "health": 94,
+  "damage": 20,
+  "armor": 63,
+  "bot_class": "Support",
+  "avatar_url": "https://robohash.org/nostrumrepellendustenetur.png"
+}
 ```
