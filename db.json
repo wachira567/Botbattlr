@@ -1,0 +1,64 @@
+{
+  "bots": [
+    {
+      "id": "102",
+      "name": "RyM-66",
+      "health": 86,
+      "damage": 36,
+      "armor": 77,
+      "bot_class": "Medic",
+      "catchphrase": "0110011100000100011110100110011000011001",
+      "avatar_url": "https://robohash.org/quidemconsequaturaut.png?size=300x300&set=set1",
+      "created_at": "2018-10-02T19:55:10.827Z",
+      "updated_at": "2018-10-02T19:55:10.827Z"
+    },
+    {
+      "id": "106",
+      "name": "MAG-88",
+      "health": 87,
+      "damage": 45,
+      "armor": 69,
+      "bot_class": "Witch",
+      "catchphrase": "11100011100011100011100011100011",
+      "avatar_url": "https://robohash.org/veritatisautemqui.png?size=300x300&set=set1",
+      "created_at": "2018-10-02T19:55:10.880Z",
+      "updated_at": "2018-10-02T19:55:10.880Z"
+    },
+    {
+      "id": "107",
+      "name": "FLS-72",
+      "health": 82,
+      "damage": 38,
+      "armor": 92,
+      "bot_class": "Support",
+      "catchphrase": "10011001100110011001100110011001",
+      "avatar_url": "https://robohash.org/iddoloresaut.png?size=300x300&set=set1",
+      "created_at": "2018-10-02T19:55:10.893Z",
+      "updated_at": "2018-10-02T19:55:10.893Z"
+    },
+    {
+      "id": "108",
+      "name": "BOL-81",
+      "health": 95,
+      "damage": 25,
+      "armor": 81,
+      "bot_class": "Medic",
+      "catchphrase": "01001010100101001010010100101001",
+      "avatar_url": "https://robohash.org/voluptatemomnissed.png?size=300x300&set=set1",
+      "created_at": "2018-10-02T19:55:10.907Z",
+      "updated_at": "2018-10-02T19:55:10.907Z"
+    },
+    {
+      "id": "111",
+      "name": "NXT-67",
+      "health": 93,
+      "damage": 29,
+      "armor": 78,
+      "bot_class": "Captain",
+      "catchphrase": "10111011101110111011101110111011",
+      "avatar_url": "https://robohash.org/autidnobis.png?size=300x300&set=set1",
+      "created_at": "2018-10-02T19:55:10.947Z",
+      "updated_at": "2018-10-02T19:55:10.947Z"
+    }
+  ]
+}
