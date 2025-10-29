@@ -59,6 +59,256 @@
       "avatar_url": "https://robohash.org/autidnobis.png?size=300x300&set=set1",
       "created_at": "2018-10-02T19:55:10.947Z",
       "updated_at": "2018-10-02T19:55:10.947Z"
+    },
+    {
+      "id": "112",
+      "name": "RX-101",
+      "health": 120,
+      "damage": 20,
+      "armor": 6,
+      "bot_class": "Assault",
+      "catchphrase": "Lock and load!",
+      "avatar_url": "https://robohash.org/RX-101.png"
+    },
+    {
+      "id": "113",
+      "name": "HL-9",
+      "health": 85,
+      "damage": 12,
+      "armor": 3,
+      "bot_class": "Support",
+      "catchphrase": "Healing is my weapon.",
+      "avatar_url": "https://robohash.org/HL-9.png"
+    },
+    {
+      "id": "114",
+      "name": "GX-5",
+      "health": 140,
+      "damage": 15,
+      "armor": 10,
+      "bot_class": "Defender",
+      "catchphrase": "You shall not pass!",
+      "avatar_url": "https://robohash.org/GX-5.png"
+    },
+    {
+      "id": "115",
+      "name": "DR-11",
+      "health": 100,
+      "damage": 18,
+      "armor": 4,
+      "bot_class": "Medic",
+      "catchphrase": "First aid incoming!",
+      "avatar_url": "https://robohash.org/DR-11.png"
+    },
+    {
+      "id": "116",
+      "name": "XT-43",
+      "health": 125,
+      "damage": 22,
+      "armor": 5,
+      "bot_class": "Assault",
+      "catchphrase": "Target acquired.",
+      "avatar_url": "https://robohash.org/XT-43.png"
+    },
+    {
+      "id": "117",
+      "name": "SB-3",
+      "health": 60,
+      "damage": 35,
+      "armor": 1,
+      "bot_class": "Assassin",
+      "catchphrase": "Blink and you’ll miss me.",
+      "avatar_url": "https://robohash.org/SB-3.png"
+    },
+    {
+      "id": "118",
+      "name": "PX-90",
+      "health": 150,
+      "damage": 12,
+      "armor": 12,
+      "bot_class": "Defender",
+      "catchphrase": "Built like a tank.",
+      "avatar_url": "https://robohash.org/PX-90.png"
+    },
+    {
+      "id": "119",
+      "name": "MD-2",
+      "health": 80,
+      "damage": 8,
+      "armor": 3,
+      "bot_class": "Support",
+      "catchphrase": "Let’s keep the team alive.",
+      "avatar_url": "https://robohash.org/MD-2.png"
+    },
+    {
+      "id": "120",
+      "name": "BL-8",
+      "health": 90,
+      "damage": 30,
+      "armor": 4,
+      "bot_class": "Assassin",
+      "catchphrase": "One shot, one scrap.",
+      "avatar_url": "https://robohash.org/BL-8.png"
+    },
+    {
+      "id": "121",
+      "name": "RG-12",
+      "health": 130,
+      "damage": 19,
+      "armor": 7,
+      "bot_class": "Assault",
+      "catchphrase": "Battle mode engaged.",
+      "avatar_url": "https://robohash.org/RG-12.png"
+    },
+    {
+      "id": "122",
+      "name": "TH-5",
+      "health": 160,
+      "damage": 15,
+      "armor": 15,
+      "bot_class": "Defender",
+      "catchphrase": "Come at me, bro!",
+      "avatar_url": "https://robohash.org/TH-5.png"
+    },
+    {
+      "id": "123",
+      "name": "LF-1",
+      "health": 75,
+      "damage": 10,
+      "armor": 4,
+      "bot_class": "Medic",
+      "catchphrase": "Patch job complete.",
+      "avatar_url": "https://robohash.org/LF-1.png"
+    },
+    {
+      "id": "124",
+      "name": "AR-4",
+      "health": 110,
+      "damage": 21,
+      "armor": 6,
+      "bot_class": "Assault",
+      "catchphrase": "Fire in the hole!",
+      "avatar_url": "https://robohash.org/AR-4.png"
+    },
+    {
+      "id": "125",
+      "name": "QT-33",
+      "health": 70,
+      "damage": 26,
+      "armor": 2,
+      "bot_class": "Assassin",
+      "catchphrase": "Swift and silent.",
+      "avatar_url": "https://robohash.org/QT-33.png"
+    },
+    {
+      "id": "126",
+      "name": "OB-19",
+      "health": 145,
+      "damage": 16,
+      "armor": 11,
+      "bot_class": "Defender",
+      "catchphrase": "Defense is the best offense.",
+      "avatar_url": "https://robohash.org/OB-19.png"
+    },
+    {
+      "id": "127",
+      "name": "FL-0",
+      "health": 85,
+      "damage": 9,
+      "armor": 3,
+      "bot_class": "Support",
+      "catchphrase": "Energy levels restored.",
+      "avatar_url": "https://robohash.org/FL-0.png"
+    },
+    {
+      "id": "128",
+      "name": "ZK-7",
+      "health": 95,
+      "damage": 25,
+      "armor": 8,
+      "bot_class": "Assault",
+      "catchphrase": "Charge ahead!",
+      "avatar_url": "https://robohash.org/ZK-7.png"
+    },
+    {
+      "id": "129",
+      "name": "VN-14",
+      "health": 110,
+      "damage": 14,
+      "armor": 9,
+      "bot_class": "Defender",
+      "catchphrase": "Stand your ground!",
+      "avatar_url": "https://robohash.org/VN-14.png"
+    },
+    {
+      "id": "130",
+      "name": "YR-22",
+      "health": 78,
+      "damage": 32,
+      "armor": 2,
+      "bot_class": "Assassin",
+      "catchphrase": "Strike from the shadows.",
+      "avatar_url": "https://robohash.org/YR-22.png"
+    },
+    {
+      "id": "131",
+      "name": "WL-9",
+      "health": 88,
+      "damage": 11,
+      "armor": 4,
+      "bot_class": "Medic",
+      "catchphrase": "Healing wave incoming!",
+      "avatar_url": "https://robohash.org/WL-9.png"
+    },
+    {
+      "id": "132",
+      "name": "XM-16",
+      "health": 135,
+      "damage": 18,
+      "armor": 10,
+      "bot_class": "Assault",
+      "catchphrase": "Overdrive activated.",
+      "avatar_url": "https://robohash.org/XM-16.png"
+    },
+    {
+      "id": "133",
+      "name": "TQ-8",
+      "health": 92,
+      "damage": 7,
+      "armor": 5,
+      "bot_class": "Support",
+      "catchphrase": "Buffing the team.",
+      "avatar_url": "https://robohash.org/TQ-8.png"
+    },
+    {
+      "id": "134",
+      "name": "UP-3",
+      "health": 155,
+      "damage": 13,
+      "armor": 14,
+      "bot_class": "Defender",
+      "catchphrase": "Unbreakable fortress.",
+      "avatar_url": "https://robohash.org/UP-3.png"
+    },
+    {
+      "id": "135",
+      "name": "SN-11",
+      "health": 65,
+      "damage": 28,
+      "armor": 1,
+      "bot_class": "Assassin",
+      "catchphrase": "Silent but deadly.",
+      "avatar_url": "https://robohash.org/SN-11.png"
+    },
+    {
+      "id": "136",
+      "name": "RK-5",
+      "health": 102,
+      "damage": 16,
+      "armor": 6,
+      "bot_class": "Medic",
+      "catchphrase": "Restoring vitality.",
+      "avatar_url": "https://robohash.org/RK-5.png"
     }
   ]
 }
