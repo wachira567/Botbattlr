@@ -1,8 +1,11 @@
+// Component for filtering and sorting bot collection
 import { useState } from "react";
 
 function SortBar({ onSort, onFilter }) {
+  // Track active filter selection
   const [activeFilter, setActiveFilter] = useState("All");
 
+  // Available bot classes for filtering
   const botClasses = [
     "All",
     "Support",
@@ -13,6 +16,7 @@ function SortBar({ onSort, onFilter }) {
     "Witch",
   ];
 
+  // Handle filter button clicks
   const handleFilter = (botClass) => {
     setActiveFilter(botClass);
     onFilter(botClass);
@@ -20,6 +24,7 @@ function SortBar({ onSort, onFilter }) {
 
   return (
     <div className="sort-bar">
+      {/* Filter section for bot classes */}
       <div className="filter-section">
         <h3>Filter by Class:</h3>
         <div className="filter-buttons">
@@ -37,6 +42,7 @@ function SortBar({ onSort, onFilter }) {
         </div>
       </div>
 
+      {/* Sort section for bot stats */}
       <div className="sort-section">
         <h3>Sort by:</h3>
         <div className="sort-buttons">

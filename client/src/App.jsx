@@ -1,22 +1,26 @@
+// Main App component for Bot Battlr
 import { useState, useEffect } from "react";
 import "./App.css";
 import BotCollection from "./components/BotCollection";
 import YourBotArmy from "./components/YourBotArmy";
 import SortBar from "./components/SortBar";
 
-// Use environment variable for API URL
+// API base URL, uses environment variable or defaults to localhost
 const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:10000";
 
 function App() {
+  // State for all bots, user's army, displayed bots, and loading status
   const [allBots, setAllBots] = useState([]);
   const [armyBots, setArmyBots] = useState([]);
   const [displayedBots, setDisplayedBots] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
+  // Fetch bots on component mount
   useEffect(() => {
     fetchBots();
   }, []);
 
+  // Fetch bots from API with error handling and fallback
   const fetchBots = async () => {
     try {
       setIsLoading(true);
@@ -51,6 +55,7 @@ function App() {
     }
   };
 
+  // Delete bot permanently from collection and army
   const deleteBot = async (botId) => {
     try {
       await fetch(`${API_BASE_URL}/bots/${botId}`, {
@@ -71,7 +76,7 @@ function App() {
     }
   };
 
-  // Keep all your other functions (addToArmy, removeFromArmy, sortBots, filterBots) the same
+  // Add bot to user's army if not already present
   const addToArmy = (bot) => {
     const isAlreadyInArmy = armyBots.find((armyBot) => armyBot.id === bot.id);
     if (!isAlreadyInArmy) {
@@ -79,11 +84,13 @@ function App() {
     }
   };
 
+  // Remove bot from user's army
   const removeFromArmy = (botId) => {
     const updatedArmy = armyBots.filter((bot) => bot.id !== botId);
     setArmyBots(updatedArmy);
   };
 
+  // Sort displayed bots by selected criteria (health, damage, armor)
   const sortBots = (criteria) => {
     const sortedBots = [...displayedBots].sort(
       (a, b) => b[criteria] - a[criteria]
@@ -91,6 +98,7 @@ function App() {
     setDisplayedBots(sortedBots);
   };
 
+  // Filter bots by class or show all
   const filterBots = (botClass) => {
     if (botClass === "All") {
       setDisplayedBots(allBots);
@@ -102,20 +110,23 @@ function App() {
 
   return (
     <div className="app">
-      {/* Your existing JSX remains the same */}
+      {/* App header with title and description */}
       <header className="app-header">
         <h1>Bot Battlr</h1>
         <p>Build Your Ultimate Bot Army!</p>
       </header>
 
+      {/* User's bot army section */}
       <YourBotArmy
         armyBots={armyBots}
         onRemove={removeFromArmy}
         onDelete={deleteBot}
       />
 
+      {/* Filter and sort controls */}
       <SortBar onSort={sortBots} onFilter={filterBots} />
 
+      {/* Loading state or bot collection */}
       {isLoading ? (
         <div className="loading">Loading bots...</div>
       ) : (

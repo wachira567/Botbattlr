@@ -1,3 +1,4 @@
+// Component to display the collection of available bots
 import BotCard from "./BotCard";
 
 function BotCollection({ bots, onAddToArmy, armyBots }) {
@@ -9,10 +10,12 @@ function BotCollection({ bots, onAddToArmy, armyBots }) {
   return (
     <div className="bot-collection">
       <h2>Available Bots</h2>
+      {/* Grid layout for bot cards */}
       <div className="bots-grid">
         {bots.length === 0 ? (
           <p>No bots available. Try different filters!</p>
         ) : (
+          // Render each bot as a card
           bots.map((bot) => (
             <BotCard
               key={bot.id}
